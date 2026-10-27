@@ -375,6 +375,10 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
 .related{background:linear-gradient(180deg,#08222f,#0a2c3d);color:#fff}
 .related .section-sub{color:rgba(255,255,255,.66)}
 .rel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.light-grid{grid-template-columns:repeat(4,1fr)}
+.light-grid .b-card p{font-size:13.5px}
+@media (max-width:1024px){.light-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.light-grid{grid-template-columns:1fr}}
 .rel-card{
   background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:20px;
   padding:24px 22px;transition:.25s;
@@ -479,6 +483,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       <a href="#products">Продукты</a>
       <a href="#apply">Применение</a>
       <a href="#specs">Спецификация</a>
+      <a href="#articles">Статьи</a>
       <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -492,6 +497,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
   <a href="#video">Видео-инструкция</a>
   <a href="#apply">Применение</a>
   <a href="#specs">Спецификация</a>
+  <a href="#articles">Статьи</a>
   <a href="#faq">Вопросы и ответы</a>
   <a href="#contacts">Где купить</a>
   <a class="mm-cta" href="#form">Получить консультацию</a>
@@ -575,11 +581,11 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 3 7 7-11 11H3v-7L14 3Z"/><path d="m13 5 6 6"/></svg></div><h3>Лёгкое нанесение</h3><p>Кисть, валик или шпатель. Для больших площадей — аппарат безвоздушного распыления, например GRACO Mark V.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div><h3>Без грунтовки и праймера</h3><p>Готов к применению: не требует смешивания, нагрева и предварительного грунтования поверхности.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3.5 7 10a6.5 6.5 0 1 0 10 0l-5-6.5Z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg></div><h3>Наносится на влажное основание</h3><p>Можно даже не защищать покрытие от дождя на время полимеризации.</p></div>
-      <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 6 6 9 0s6 6 9 0"/></svg></div><h3>Постоянная эластичность</h3><p>Перекрывает вновь образующиеся трещины до 10 мм. Эластичность сохраняется при морозах до −40 °C.</p></div>
+      <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 6 6 9 0s6 6 9 0"/></svg></div><h3>Постоянная эластичность</h3><p>Перекрывает вновь образующиеся трещины до 10 мм и существующие — до 5 мм. Эластичность сохраняется при морозах до −40 °C.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Не боится ультрафиолета</h3><p>Эксплуатация без обслуживания и защиты от солнца — покрытие работает десятилетиями.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 11-8-8-8.5 8.5a2.1 2.1 0 0 0 3 3L11 9"/><path d="M13.5 6.5 17 10"/><path d="M2 21h20"/></svg></div><h3>Окрашивается</h3><p>Практически любой краской, без потери свойств — можно не дожидаться высыхания Акваблокера.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.3 12C19 16.4 12 21 12 21Z"/></svg></div><h3>Экологичен и безопасен</h3><p>Безопасен при нанесении и эксплуатации, сертификат EC1. Может контактировать с пищевыми продуктами после полимеризации.</p></div>
-      <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Чистый состав</h3><p>Не содержит битума, силикона, изоцианатов и растворителей. Не пачкает место работ и не имеет запаха.</p></div>
+      <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Чистый состав</h3><p>Не содержит битума, силикона, изоцианатов, растворителей и воды. Не пачкает место работ и не имеет запаха.</p></div>
       <div class="b-card reveal"><div class="b-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M8 9h2M9 8v2M13.5 13.5 21 21"/></svg></div><h3>Экономичнее аналогов</h3><p>Значительно уменьшает затраты на гидроизоляционные работы: без оборудования, горелок и бригады специалистов.</p></div>
     </div>
   </div>
@@ -604,7 +610,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Перекрывает трещины ~8–10 мм при толщине слоя 1,5 мм</li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Расход 2,3 кг/м² на два слоя; 0,4 кг/м² для приклеивания плит</li>
         </ul>
-        <span class="prod-pack"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16l-1.5 12h-13L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg> Упаковка: ведро 14 кг · банка 1 кг</span>
+        <span class="prod-pack"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16l-1.5 12h-13L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg> Упаковка: ведро 14 кг (два пакета по 7 кг) · банка 1 кг</span>
       </div>
       <div class="prod-card reveal">
         <span class="prod-tag">Для горизонтальных поверхностей</span>
@@ -654,7 +660,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
         <img src="images/apply-steps.jpg" alt="Инструкция по нанесению Акваблокер: 5 шагов" loading="lazy">
       </div>
       <div class="steps">
-        <div class="step reveal"><div class="step-n"></div><div><h3>Подготовка поверхности</h3><p>Основание должно быть чистым, сухим или влажным (без луж), прочным. Удалите мусор, пыль, рыхлые участки и загрязнения; жирные участки — обезжирьте. Грунтование, как правило, не требуется.</p></div></div>
+        <div class="step reveal"><div class="step-n"></div><div><h3>Подготовка поверхности</h3><p>Основание должно быть чистым, сухим или влажным (без луж), прочным. Удалите мусор, пыль, рыхлые участки и загрязнения; жирные участки — обезжирьте. Крупные капли и лужи вытрите тряпкой: поверхность может быть влажной, но не мокрой. Грунтование, как правило, не требуется.</p></div></div>
         <div class="step reveal"><div class="step-n"></div><div><h3>Гидроизоляция углов и примыканий</h3><p>Обработайте углы, примыкания и швы, используя армирующую ленту и мастерку или кисть.</p></div></div>
         <div class="step reveal"><div class="step-n"></div><div><h3>Нанесение мастики — 1-й слой</h3><p>Нанесите первый слой равномерно при помощи валика с коротким ворсом, кисти или шпателя. При температуре от +5 °C до +35 °C.</p></div></div>
         <div class="step reveal"><div class="step-n"></div><div><h3>Нанесение мастики — 2-й слой</h3><p>После полимеризации первого слоя (минимум 4 часа при +20 °C) нанесите второй слой для надёжной гидроизоляции.</p></div></div>
@@ -662,7 +668,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       </div>
     </div>
     <div class="area-chips reveal">
-      <span>Плоская и скатная кровля</span><span>Примыкания и швы</span><span>Фундаменты</span><span>Подвалы</span><span>Цоколи</span><span>Ванные и санузлы</span><span>Лоджии и балконы</span><span>Водосточные трубы</span><span>Приклеивание изоляционных плит</span><span>Антикоррозийная защита металла</span>
+      <span>Плоская и скатная кровля</span><span>Примыкания и швы</span><span>Фундаменты</span><span>Подвалы</span><span>Цоколи</span><span>Ванные и санузлы</span><span>Лоджии и балконы</span><span>Водосточные трубы</span><span>Приклеивание бетонных, дренажных и изоляционных плит</span><span>Антикоррозийная защита металла</span>
     </div>
     <div class="warn-note reveal"><b>Важно:</b> Акваблокер не подходит для деформационных и разделительных швов. Для таких швов используйте эластичный герметик на MS-полимере Bostik 2720 MS или клей-герметик Bostik 2750 MS. При нанесении ниже +5 °C поверхность следует прогреть горелкой, строительным феном или устроить тепляк. Материал в заводской упаковке беречь от мороза.</div>
   </div>
@@ -715,6 +721,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       <p>Модифицированные силан-полимеры превосходят по полезным свойствам полиуретан, каучук и силикон, но не имеют их недостатков: они обладают великолепной адгезией к большинству материалов, не разрушаются со временем и устойчивы к механическим воздействиям.</p>
       <p>В отличие от мембранных кровель, у которых слабое место — стыки полотнищ и примыкания, и «жидкой резины», требующей нагрева, спецоборудования и подготовленной бригады, <b>Акваблокер создаёт сплошное бесшовное покрытие без огня и техники</b>.</p>
       <p>После полимеризации материал образует водонепроницаемое эластичное покрытие, защищает от воды под давлением, влажности грунта и бетоноагрессивных грунтовых вод, а металлические конструкции — ещё и от коррозии.</p>
+      <p>Акваблокер прошёл все необходимые испытания. Производится материал германским отделением международного концерна Bostik (независимое дочернее предприятие компании Total), а сама технология модифицированных силан-полимеров применяется в строительстве с 1970-х годов.</p>
       <div class="tech-facts">
         <div class="tech-fact"><b>Германия</b><span>производство концерна Bostik GmbH</span></div>
         <div class="tech-fact"><b>EC1</b><span>сертификат очень низкой эмиссии</span></div>
@@ -741,6 +748,15 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       <details class="faq reveal"><summary>Собираюсь покрыть Акваблокером пол лоджии, сверху будет резиновое покрытие. Каким клеем его закрепить?</summary><div class="faq-body">Покрытие можно приклеить прямо на Акваблокер: нанесите первый слой, дождитесь его полимеризации, затем нанесите второй слой и на него приклеивайте покрытие.</div></details>
       <details class="faq reveal"><summary>Можно ли хранить открытую упаковку Акваблокера?</summary><div class="faq-body">Желательно использовать Акваблокер сразу после открытия герметичной упаковки: материал однокомпонентный и начинает полимеризоваться при контакте с влагой воздуха. Закрытую заводскую упаковку храните в тепле, берегите от мороза.</div></details>
       <details class="faq reveal"><summary>Чем наносить Акваблокер на большие площади?</summary><div class="faq-body">Кистью, валиком с коротким ворсом или шпателем. Для значительных площадей используйте аппарат безвоздушного распыления — например, GRACO Mark V: это многократно ускоряет работу на кровлях и других больших поверхностях.</div></details>
+      <details class="faq reveal"><summary>Какой цвет у Акваблокера? Можно красить поверх него?</summary><div class="faq-body">Акваблокер имеет серый цвет. Поверх материала можно нанести кварцевый песок любого цвета или окрасить практически любой краской. Желательно предварительно проверить краску на небольшой площади, покрытой Акваблокером. Краску можно наносить, даже не дожидаясь полной полимеризации Акваблокера.</div></details>
+      <details class="faq reveal"><summary>Если Акваблокер — новый материал, откуда вы знаете, что он надёжный?</summary><div class="faq-body">Акваблокер прошёл все необходимые испытания. Кроме того, материал основан на модифицированных силан-полимерах: первые МС-полимеры появились ещё в 1970-х годах и с тех пор крайне хорошо зарекомендовали себя в строительстве.</div></details>
+      <details class="faq reveal"><summary>Можно наносить Акваблокер на сырую поверхность?</summary><div class="faq-body">Да. Акваблокер можно наносить на влажную, но не мокрую поверхность. Если есть капли или лужи воды, удалите их перед нанесением тряпкой.</div></details>
+      <details class="faq reveal"><summary>Нужно использовать грунтовку на гидроизолируемой поверхности?</summary><div class="faq-body">Акваблокер превосходно держится на бетоне, дереве, металле, камне, пене, старом битуме, большинстве пластиков (кроме специальных антиадгезионных пластиков). Грунтовка и праймер не нужны.</div></details>
+      <details class="faq reveal"><summary>Что значит «Акваблокер перекрывает трещины до 10 мм»?</summary><div class="faq-body">Если в основании, на которое вы нанесли Акваблокер, образуется трещина шириной 10 мм, материал растянется и перекроет её, сохранив герметичность покрытия.</div></details>
+      <details class="faq reveal"><summary>На холоде Акваблокер не потрескается?</summary><div class="faq-body">Температурный режим материала Акваблокер — от −40 °C до +80 °C. Эластичность сохраняется и при отрицательных температурах до −40 °C, поэтому на холоде покрытие не потрескается.</div></details>
+      <details class="faq reveal"><summary>Кто делает Акваблокер?</summary><div class="faq-body">Германское отделение международного концерна Bostik. Bostik — независимое дочернее предприятие топливно-энергетической компании Total.</div></details>
+      <details class="faq reveal"><summary>В какой таре продаётся продукт?</summary><div class="faq-body">Акваблокер продаётся в стандартной заводской упаковке: банка 1 кг и ведро 14 кг (в ведре — два закрытых пакета по 7 кг). Акваблокер Ликвид — ведро 14 кг.</div></details>
+      <details class="faq reveal"><summary>Не уверен, что в моём случае можно использовать ваш материал</summary><div class="faq-body">Если есть сомнения, напишите нам запрос по электронной почте или позвоните по телефону, указанному на сайте, — мы бесплатно проконсультируем и подберём решение под вашу задачу.</div></details>
     </div>
   </div>
 </section>
@@ -757,6 +773,27 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       <div class="rel-card reveal"><h3>Bostik 2750 MS</h3><p>Клей-герметик на MS-полимере для прочных эластичных соединений и приклеивания материалов.</p></div>
       <div class="rel-card reveal"><h3>Закрепитель Пудер Экс Heydi</h3><p>Мгновенная остановка воды: быстротвердеющий состав для ликвидации активных протечек.</p></div>
       <div class="rel-card reveal"><h3>Расширяющийся раствор Экстра</h3><p>Водонепроницаемый ремонтный состав для ремонта и гидроизоляции конструкций под давлением воды.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTICLES ================= -->
+<section class="section" id="articles" style="background:#fff">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Статьи</span>
+      <h2>Экспертные материалы о <span class="grad-text">гидроизоляции</span></h2>
+      <p class="section-sub">Подробные статьи о мастиках, кровле, технологии MS-полимера и сопутствующих материалах — всё, что мы знаем сами.</p>
+    </div>
+    <div class="rel-grid light-grid" style="margin-top:36px">
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="gidroizolyacionnaya-mastika.html" style="text-decoration:none"><h3>Гидроизоляционная мастика</h3><p>От битума до MS-полимера: что такое мастика, как она устроена и почему работает.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="gidroizolyaciya-krovli-gidroizolyacionnoi-mastikoi-akvabloker.html" style="text-decoration:none"><h3>Гидроизоляция кровли мастикой Акваблокер</h3><p>Мембранная кровля, «жидкая резина» и MS-полимер: выбираем решение для плоской кровли.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="klassifikaciya-germetiziruyuschih-mastik.html" style="text-decoration:none"><h3>Классификация герметизирующих мастик</h3><p>По отраслям и функциям: строительные, авиационные, гидроизоляционные, клеящие, шпаклёвочные.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="preimuschestva-odnokomponentnoi-gidroizolyacionnoi-mastiki.html" style="text-decoration:none"><h3>Преимущества однокомпонентной мастики</h3><p>Почему однокомпонентные материалы проще, быстрее и безопаснее двухкомпонентных.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="bystroe-nanesenie-akvablokera-na-bolshie-ploshchadi.html" style="text-decoration:none"><h3>Быстрое нанесение на большие площади</h3><p>Акваблокер + GRACO Mark V: безвоздушное распыление и характеристики аппарата.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="legkaja-pobeda-nad-syrostyu-i-vodoj-v-vannoj.html" style="text-decoration:none"><h3>Лёгкая победа над сыростью и водой в ванной</h3><p>Грибок, конденсат и протечки: гидроизоляция ванной, душевой и бани.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="mgnovennaia-ostanovka-vody-zakrepitel-puder-eks-heydi.html" style="text-decoration:none"><h3>Мгновенная остановка воды: Пудер Экс Heydi</h3><p>Останавливает напорные течи до 10 секунд — даже под водой.</p></a>
+      <a class="b-card reveal" style="display:block;text-decoration:none" href="vodonepronitcaemyi-remontnyi-sostav-rasshiriaiushchiisia-rastvor-ekstra.html" style="text-decoration:none"><h3>Расширяющийся раствор Экстра</h3><p>Ремонт бетона и полостей до 100 мм за один приём, без усадки.</p></a>
     </div>
   </div>
 </section>
@@ -790,7 +827,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
       </div>
       <div class="form-card reveal" id="form">
         <h3>Оставьте заявку</h3>
-        <p class="fnote">Заполните форму — мы свяжемся с вами, подберём материал и рассчитаем расход под вашу задачу.</p>
+        <p class="fnote">Заполните форму — мы свяжемся с вами, подберём материал и рассчитаем расход под вашу задачу. По запросу вышлем полное техническое описание, карту химической устойчивости и сертификаты в электронном виде.</p>
         <div class="ya-form-wrap">
           <script src="https://forms.yandex.ru/_static/embed.js"></script>
           <iframe src="https://forms.yandex.ru/u/6ae0b57c852af36fe30a20df?iframe=1" frameborder="0" name="ya-form-6ae0b57c852af36fe30a20df" width="650" title="Форма заявки"></iframe>
@@ -824,6 +861,7 @@ details.faq[open] summary::after{transform:rotate(45deg);background:var(--grad);
         <a href="#apply">Применение</a>
         <a href="#specs">Спецификация</a>
         <a href="#faq">Вопросы и ответы</a>
+        <a href="#articles">Статьи</a>
       </div>
       <div>
         <h4>Документы</h4>
